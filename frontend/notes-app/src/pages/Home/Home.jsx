@@ -146,9 +146,9 @@ const Home = () => {
 <div className="container mx-auto">
   {allNotes.length > 0 ? (
     <div className="grid grid-cols-3 gap-4 mt-8">
-      {allNotes.map((item) => (
+      {allNotes.map((item, index) => (
         <Notecard
-          key={item.id}
+          key={index}
           title={item.title}
           date={item.createdOn}
           content={item.content}
